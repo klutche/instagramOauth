@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>instagramOauth</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<form action="https://api.instagram.com/oauth/access_token" method="post">
+
+<p>
+<label for="client_id">CLIENT ID</label>
+<input type="text" name="client_id" id="client_id" value="">
+</p>
+
+<p>
+<label for="client_secret">CLIENT SECRET</label>
+<input type="text" name="client_secret" id="client_secret" value="">
+</p>
+
+<p>
+<label for="redirect_uri">REDIRECT URI</label>
+<input type="text" name="redirect_uri" id="redirect_uri" value="">
+</p>
+
+<p>
+<label for="code">CODE</label>
+<input type="text" name="code" id="code" value="">
+</p>
+
+<input type="hidden" name="grant_type" value="authorization_code">
+
+<input type="submit" value="送信">
+
+</form>
+
+</body>
+</html>
